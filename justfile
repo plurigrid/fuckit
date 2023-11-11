@@ -1,0 +1,2 @@
+play:
+	duck thesubtleart.bb
