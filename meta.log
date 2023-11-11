@@ -1,0 +1,210 @@
+barton@grothendieck ~ % which duck
+/usr/local/bin/duck
+barton@grothendieck ~ % strings /usr/local/bin/duck
+^C
+barton@grothendieck ~ %
+barton@grothendieck ~ %
+barton@grothendieck ~ % duck thesubtleart.bb
+----- Error --------------------------------------------------------------------
+Type:     java.lang.Exception
+Message:  File does not exist: thesubtleart.bb
+
+barton@grothendieck ~ % cd topos
+barton@grothendieck topos % ls
+1809.log
+2023-08-25.md
+2023-08-29.md
+480p.mov
+CartierHerreman2.pdf
+DAVINCI.js
+From Word Models to World Models_ Translating from Natural Language to the Probabilistic Language of Thought (1).md
+GhidraChatGPT
+Heat
+LeanDojo
+LeanDojoChatGPT
+LeanInfer
+MARRRRRRRL.jpg
+Medusa
+MetaGPT
+Modelfile
+Modelfile-duck
+Modelfile.bak
+PRA.svg.mht
+TIME.ROOTKIT.json
+TTS
+Untitled.jpg
+\
+aider
+app
+awesome-flow-functions
+beuter
+bosquet
+cal.com
+candle
+candle-segment-anything-wasm
+chainlit
+chainlit-cookbook
+chainlit.md
+coop.pdf
+coqui.py
+dao-contracts
+data
+dihypergraph.json
+duck
+edgar
+emergence.full.Pi.md
+emma
+exocortex
+flow.wav
+flowmaps
+flowmaps.zip
+flux
+frames
+frames.zip
+free.agent.clj
+fuckit
+geb
+geb.md
+gm
+gm.bb
+gm.py
+gmgmgmgmgmgmgmgm.jpeg
+grid
+grids
+ideas.db
+instagraph
+intercode
+lab.code-workspace
+llama.cpp
+llama2.mojo
+llm
+llm-llama-cpp
+llm-mlc
+logs
+marqo.ipynb
+meso
+metamath.md
+mitmproxy2swagger
+mlc-chat-config.json
+mlc-llm
+mlc-llm-n-1
+mm0
+mm1.md
+modal-examples
+n-1.log
+natdevmonaduck69.json
+ndarray-cache.json
+new_file.clj
+node_modules
+noosphere
+nougat
+oaeuaoeuaoeuaeouaoeuaoeeu
+ollama
+omega
+open-interpreter
+opengame.md
+orca
+out-0.png
+outlines
+output.txt.txt
+package-lock.json
+package.json
+partykit
+phi-1_5
+pigm
+plurigrid.mov
+poe.com
+poetry.lock
+principia
+pyproject.toml
+random.walk.up.higher.categories.md
+reqs.txt
+sanctum
+science
+seamless_communication
+shabani.yaml
+stitched_frames
+tau
+til
+topos.code-workspace
+topos.map
+topos.md
+trace.json
+utf8.py
+web-llm
+whisper
+whisper.cpp
+why.md
+wiki-extension
+workers-wonnx
+xm
+zion
+~
+∞.json
+∞.m4a
+∞.srt
+∞.tsv
+∞.txt
+∞.vtt
+barton@grothendieck topos % duck fuckit/thesubtleart.bb
+Capturing screenshot to: /tmp/68888e80-0371-4570-b831-25bbfcaaa091.png
+Screenshot saved to: /tmp/68888e80-0371-4570-b831-25bbfcaaa091.png
+Deleting temporary file: /tmp/68888e80-0371-4570-b831-25bbfcaaa091.png
+----- Error --------------------------------------------------------------------
+Type:     clojure.lang.ExceptionInfo
+Message:  clj-http: status 401
+Data:     {:headers {"server" "cloudflare", "content-type" "application/json; charset=utf-8", "content-length" "496", "alt-svc" "h3=\":443\"; ma=86400", "strict-transport-security" "max-age=15724800; includeSubDomains", "connection" "keep-alive", "set-cookie" "__cf_bm=MXzbRj_8fm6JBurmE1Uq7I.sh0wd6RNSAggNGW1_VJA-1699677233-0-Aca8TUSL+4jTBgGnGJDnYbxx2Qtay6J2SB+IhQsSjM/51FiwHCVqJ27QcKVyD6769J7MJrZtLJda/GdUn5wG4CY=; path=/; expires=Sat, 11-Nov-23 05:03:53 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None", "cf-cache-status" "DYNAMIC", "cf-ray" "8243d1d21abb255c-SJC", "date" "Sat, 11 Nov 2023 04:33:53 GMT", "vary" "Origin", "x-request-id" "0dba0e2503d50cb801a9517f5bdb8aac"}, :status 401, :body "{\n    \"error\": {\n        \"message\": \"You didn't provide an API key. You need to provide your API key in an Authorization header using Bearer auth (i.e. Authorization: Bearer YOUR_KEY), or as the password field (with blank username) if you're accessing the API from your browser and are prompted for a username and password. You can obtain an API key from https://platform.openai.com/account/api-keys.\",\n        \"type\": \"invalid_request_error\",\n        \"param\": null,\n        \"code\": null\n    }\n}\n"}
+Location: clj_http/lite/client.clj:246:7
+
+----- Context ------------------------------------------------------------------
+242:
+243: (defn wrap-unknown-host [client]
+244:   (fn [{:keys [ignore-unknown-host?] :as req}]
+245:     (try
+246:       (client req)
+           ^--- clj-http: status 401
+247:       (catch UnknownHostException e
+248:         (if ignore-unknown-host?
+249:           nil
+250:           (throw e))))))
+251:
+
+----- Stack trace --------------------------------------------------------------
+clj-http.lite.client/request - clj_http/lite/client.clj:246:7
+clj-http.lite.client/request - clj_http/lite/client.clj:285:1
+clj-http.lite.client/post    - clj_http/lite/client.clj:369:3
+clj-http.lite.client/post    - clj_http/lite/client.clj:365:1
+user/oai-image-description   - /Users/barton/topos/fuckit/thesubtleart.bb:16:18
+user/oai-image-description   - /Users/barton/topos/fuckit/thesubtleart.bb:15:1
+user/update-hypergraph       - /Users/barton/topos/fuckit/thesubtleart.bb:87:106
+user/update-hypergraph       - /Users/barton/topos/fuckit/thesubtleart.bb:80:1
+user                         - /Users/barton/topos/fuckit/thesubtleart.bb:94:3
+user                         - /Users/barton/topos/fuckit/thesubtleart.bb:93:1
+
+barton@grothendieck topos %
+barton@grothendieck topos %
+barton@grothendieck topos % duck fuckit/thesubtleart.bb
+Capturing screenshot to: /tmp/80236d13-ff2d-47f9-a053-6cadeed2f910.png
+Screenshot saved to: /tmp/80236d13-ff2d-47f9-a053-6cadeed2f910.png
+Deleting temporary file: /tmp/80236d13-ff2d-47f9-a053-6cadeed2f910.png
+Response body: {"id": "chatcmpl-8Ja1LVEc0Cdwpyr9ieJcs6bitHqel", "object": "chat.completion", "created": 1699677387, "model": "gpt-4-1106-vision-preview", "usage": {"prompt_tokens": 1118, "completion_tokens": 300, "total_tokens": 1418}, "choices": [{"message": {"role": "assistant", "content": "The image displays a computer screen that seems to be taken from the perspective of a developer or programmer's workplace. Here is a breakdown of the elements visible on the screen:\n\n1. **Code and Terminal**: The main focus of the image is a text editor or Integrated Development Environment (IDE) with code written in it, which is likely a part of a software development project.\n   \n2. **Error Message**: There is an error message visible within the code's output, suggesting that the developer is debugging or encountering an issue with HTTP requests.\n\n3. **API Key Text**: The terminal at the bottom of the screen shows a command that was executed, and it includes a line that mentions an API key.\n\n4. **Browser Window**: There is a web browser window to the right, partially visible, displaying what appears to be a website for managing API keys from a service. It indicates that the keys have not yet been used.\n\n5. **Dock**: The dock at the bottom shows various applications that are commonly used on macOS, such as Finder, Safari, Mail, Messages, and others.\n\n6. **Datetime and System Preferences**: At the top of the screen, the date \"Sat 11 Nov 04:36\" can be seen, indicating when the screenshot was taken. Next to the date are system indicators and preferences for a Mac operating system.\n\nThe rest of the information, such as specific code details and API keys, is not clear enough to discern from this image, and even if"}, "finish_details": {"type": "max_tokens"}, "index": 0}]}
+Capturing screenshot to: /tmp/7dac9cb0-a7f8-4967-997d-46033ab7f20f.png
+Screenshot saved to: /tmp/7dac9cb0-a7f8-4967-997d-46033ab7f20f.png
+Deleting temporary file: /tmp/7dac9cb0-a7f8-4967-997d-46033ab7f20f.png
+Response body: {"id": "chatcmpl-8Ja1aL43DkXPM3nRvyFB9A79TzAGk", "object": "chat.completion", "created": 1699677402, "model": "gpt-4-1106-vision-preview", "usage": {"prompt_tokens": 1118, "completion_tokens": 300, "total_tokens": 1418}, "choices": [{"message": {"role": "assistant", "content": "This image shows a computer desktop with multiple application windows open, likely from a macOS operating system, indicated by the distinctive design of the window controls (red, yellow, and green buttons at the top left of windows). Most notably, the forefront of the image displays a terminal window which seems to contain some command-line text, along with a browser window in the background containing a webpage of an API management interface.\n\nThe terminal window has a few lines of text and commands, which suggests that the user may have been working on coding or running some script. The text hints that there is an error or an exception that has been thrown pertaining to an HTTP request. There is also text that seems to be part of a stack trace, which developers use to debug issues in their code. Names of functions and file paths suggest that it is related to a Clojure or ClojureScript project due to the naming conventions and \".clj\" file extensions.\n\nThe open browser window displays a tab from what appears to be an API service's dashboard, with a sidebar showing details such as 'Home', 'API Keys', and 'Create New secret key'. This window lists several API keys with their created dates, all of which indicate 'Never' under 'Last Used', meaning these keys haven't been used for any requests. Above the list, there is a warning message stating that the service does not display secret API keys after creation for security reasons.\n\nVarious other application icons, a dock along the bottom of the screen, and"}, "finish_details": {"type": "max_tokens"}, "index": 0}]}
+Capturing screenshot to: /tmp/f5744982-704b-478c-ae71-c1d43e43323c.png
+Screenshot saved to: /tmp/f5744982-704b-478c-ae71-c1d43e43323c.png
+Deleting temporary file: /tmp/f5744982-704b-478c-ae71-c1d43e43323c.png
+Response body: {"id": "chatcmpl-8Ja1tEoPH6asKy1oUxRAFr6SyPS7U", "object": "chat.completion", "created": 1699677421, "model": "gpt-4-1106-vision-preview", "usage": {"prompt_tokens": 1118, "completion_tokens": 293, "total_tokens": 1411}, "choices": [{"message": {"role": "assistant", "content": "This image shows a computer screen with multiple windows and applications open, indicating someone is working in a MacOS operating environment. The main focus of the screen is a text editor with verbose output that includes lines of command/logs from a terminal, suggesting that the user is a developer or programmer running some commands or scripts. \n\nOne of the terminal windows shows a log with timestamped entries containing errors, which might relate to programming or script execution issues. At the top of the screen, the computer's status bar shows the current date as \"Sat 11 Nov 04:36\" and various icons for applications such as Wi-Fi connectivity, battery status, sound, etc. \n\nThere is also a window from a web browser displaying an API Key management system with a list of what appears to be API keys on the right side. The API keys are obscured, with warnings next to them indicating they have never been used, staying in line with good privacy practices. Additionally, there is a warning message beneath the list, reminding the user that the system does not display secret API keys in the browser or other client-side code.\n\nLastly, there's a window with a YouTube video thumbnail in the background, indicating that the user may have been watching a video titled \"Causal Invariance and Special Relativity.\"\n\nOverall, this is a busy desktop likely belonging to someone involved in software development, programming, or technical work, and it seems they are multitasking between various applications and tasks."}, "finish_details": {"type": "stop", "stop": "<|fim_suffix|>"}, "index": 0}]}
+Capturing screenshot to: /tmp/94ada13b-01aa-4512-8044-93e6a0b78881.png
+Screenshot saved to: /tmp/94ada13b-01aa-4512-8044-93e6a0b78881.png
+Deleting temporary file: /tmp/94ada13b-01aa-4512-8044-93e6a0b78881.png
+Response body: {"id": "chatcmpl-8Ja2F9dm3Uu0v4Vm5PmhnXIKOK2wR", "object": "chat.completion", "created": 1699677443, "model": "gpt-4-1106-vision-preview", "usage": {"prompt_tokens": 1118, "completion_tokens": 300, "total_tokens": 1418}, "choices": [{"message": {"role": "assistant", "content": "The image shows a computer desktop with multiple overlapping windows and applications, providing a glimpse into a user's workflow. The desktop appears to be running on a Mac OS, as indicated by the distinct interface elements such as the menu bar at the top and the style of the windows.\n\nThe foremost application in view is a terminal window, displaying text that suggests that the user has been running commands or might be working on development-related tasks. There's also a web browser with several tabs open, one of which appears to be showing a key management system from an API service, with a list of API keys and their usage details (created and last used dates). The content of the key management system is partially obscured, likely to maintain privacy and security.\n\nThere are other elements on the desktop, such as a text editor with code, hinting that the individual is involved in software or web development. It also seems the user has been capturing screenshots, as there is a message related to a screenshot capture tool in the terminal's output.\n\nThe menu bar shows typical macOS features such as the Apple logo on the top left, the system clock (Saturday, 11 Nov 04:37), WiFi connectivity, battery status, and other system indicators.\n\nOn the bottom of the screen is the macOS dock with icons for various applications, indicating the software the user frequently utilizes. Some of the applications are standard for Mac users (e.g., Finder, Safari, Mail), while others may be more specific to the user's work ("}, "finish_details": {"type": "max_tokens"}, "index": 0}]}
+Capturing screenshot to: /tmp/6dbe1784-9fe1-4385-9f90-f2136242f7f0.png
+Screenshot saved to: /tmp/6dbe1784-9fe1-4385-9f90-f2136242f7f0.png
+Deleting temporary file: /tmp/6dbe1784-9fe1-4385-9f90-f2136242f7f0.png
+Response body: {"id": "chatcmpl-8Ja2VDSnhNHIbBggpjabeV9EnL0tU", "object": "chat.completion", "created": 1699677459, "model": "gpt-4-1106-vision-preview", "usage": {"prompt_tokens": 1118, "completion_tokens": 300, "total_tokens": 1418}, "choices": [{"message": {"role": "assistant", "content": "In the image, there are multiple overlapping windows on a computer desktop, suggesting the user has been involved in a multitasking environment. The foremost window appears to be a terminal application, which developers and IT professionals commonly use, displaying text that might be from running commands or scripts. Behind it, part of a browser window can be seen, likely indicating the user was looking at some web content or performing online actions.\n\nAnother window that's partly visible shows a key management interface from an API service. It lists API keys with their creation and last used dates, and all last used dates are indicated as \"Never,\" which means these keys have not been utilized.\n\nMoreover, there's a text window, possibly a text editor or an application with a log or output from some operation. It has several paragraphs or entries that could be code, logs, or notes from the user's activities.\n\nAt the top of the screen, the Mac menu bar displays typical status indicators such as time, Wi-Fi signal strength, Bluetooth status, sound volume, and battery life. It is Saturday, 11 November 03:47, as indicated by the clock in the menu bar. The screen also contains the macOS dock at the bottom, which has various application icons, suggesting installed software and frequently used apps (e.g., Finder, Safari, Mail).\n\nIn addition to these main elements, we see an overlaid \"Capture screenshot\" window and another window labeled \"Default organization\" with a button to \"+ Create new secret key,\""}, "finish_details": {"type": "max_tokens"}, "index": 0}]}
+Capturing screenshot to: /tmp/d6e29a08-2b50-4bf8-aa0d-185640213d28.png
+Screenshot saved to: /tmp/d6e29a08-2b50-4bf8-aa0d-185640213d28.png
+Deleting temporary file: /tmp/d6e29a08-2b50-4bf8-aa0d-185640213d28.png
+Response body: {"id": "chatcmpl-8Ja2rgv35lVWrmBOaIngAiEkmMJB0", "object": "chat.completion", "created": 1699677481, "model": "gpt-4-1106-vision-preview", "usage": {"prompt_tokens": 1118, "completion_tokens": 300, "total_tokens": 1418}, "choices": [{"message": {"role": "assistant", "content": "The image shows a computer desktop with several open windows, indicating a multitasking environment. Here are some key elements visible in the image:\n\n1. Terminal Windows: There are multiple terminal windows open, which suggests the user is likely a developer or someone working with command-line tools.\n\n2. Video Thumbnail: There's a YouTube video thumbnail in the background, which may indicate a paused video or recent viewing activity related to \"Causal Invariance and Special Relativity\".\n\n3. Text Editor: There\u2019s a text editor window open, containing what appears to be either code or text, pointing to software development or writing activities.\n\n4. API Key Management Window: There is an API key management window open from an unknown service that displays creation and last used dates for different API keys. Importantly, all the API keys are blurred for privacy, which is good practice for security. There's a button named \"+ Create new secret key,\" suggesting the user might manage or create API keys for software development purposes.\n\n5. Mac OS Interface: The menu bar at the top and various windows indicate the operating system is Mac OS, as evidenced by unique design elements like the menu bar, the Dock, and system preferences.\n\n6. System Information: The date and time are visible in the top right corner of the screen, along with Wi-Fi connection status and battery status. The date shown is \"Sat 11 Nov 04:37,\" but the year is not visible.\n\n7. Overflow of Response Body Text: There"}, "finish_details": {"type": "max_tokens"}, "index": 0}]}
