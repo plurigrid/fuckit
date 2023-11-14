@@ -1,0 +1,4 @@
+data/*
+.clj-kondo/.cache/*
+.lein-repl-history
+target/*
